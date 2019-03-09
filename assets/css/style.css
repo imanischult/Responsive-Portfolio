@@ -120,7 +120,6 @@ body {
   
   #main-container {
     padding-top: 130px;
-    min-height: calc(100vh - 70px);
   }
   
   .main-section {
@@ -128,7 +127,7 @@ body {
     width: 100%;
     max-width: 960px;
     padding: 30px;
-    margin: 0 0 40px;
+    margin: 30px;
     background: #ffffff;
     border: 1px solid #dddddd;
   }
@@ -222,12 +221,22 @@ body {
       [id="masthead"] {
           width: 100%;
       }
+      [class="main-section"] {
+        width: 100%;
+        margin-top: 10%;
+      }
+      [id="main-container"] {
+        min-height: calc(100vh - 70px);
+      }
   }
 
   @media only screen and (max-width: 768px) {
       /* For tablets */
       [id="masthead"] {
           width: 75%;
+      }
+      [class="main-section"] {
+          width: 95%;
       }
   }
 
@@ -246,6 +255,9 @@ body {
       [class="auth-image"] {
           width: 100%;
           margin-bottom: 5%;
+      }
+      [class="main-section"] {
+          margin: 35px;
       }
       
   }
